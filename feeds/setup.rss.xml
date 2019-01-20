@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <rss version="2.0">
  <channel>
-  <title>Daily Racket: Posts tagged 'setup'</title>
-  <description>Daily Racket: Posts tagged 'setup'</description>
+  <title>Racket24: Posts tagged 'setup'</title>
+  <description>Racket24: Posts tagged 'setup'</description>
   <link>http://www.example.com/tags/setup.html</link>
   <lastBuildDate>Sun, 20 Jan 2019 09:01:47 UT</lastBuildDate>
   <pubDate>Sun, 20 Jan 2019 09:01:47 UT</pubDate>

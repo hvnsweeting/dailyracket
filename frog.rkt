@@ -5,7 +5,7 @@
 (define/contract (init)
   (-> any)
   (current-scheme/host "http://www.example.com")
-  (current-title "Daily Racket")
+  (current-title "Racket24")
   (current-author "Viet Hung Nguyen <hvnsweeting>"))
 
 ;; Called once per post and non-post page, on the contents.
