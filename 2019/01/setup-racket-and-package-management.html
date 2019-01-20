@@ -3,13 +3,13 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Setup Racket</title>
-    <meta name="description" content="Setup and write the first &quot;hello world&quot; program, to a daily work ready &quot;deploy&quot;....">
+    <title>Setup Racket and package management</title>
+    <meta name="description" content="Setup and write the first &quot;hello world&quot; program, to a daily work ready &quot;deploy&quot; with package management....">
     <meta name="author"      content="Viet Hung Nguyen <hvnsweeting>">
     <meta name="keywords"    content="Racket, setup">
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <link rel="icon"      href="/favicon.ico">
-    <link rel="canonical" href="http://www.example.com/2019/01/setup-racket.html">
+    <link rel="canonical" href="http://www.example.com/2019/01/setup-racket-and-package-management.html">
     <link rel="next" href="/2019/01/hello-racket.html">
 
     <!-- CSS -->
@@ -91,13 +91,13 @@
 
           <article>
   <header>
-    <h1>Setup Racket</h1>
+    <h1>Setup Racket and package management</h1>
     <p class='date-and-tags'>
 <time datetime="2019-01-20" pubdate="true">2019-01-20</time> :: <span class="tags"><a href="/tags/Racket.html">Racket</a>, <a href="/tags/setup.html">setup</a></span></p>
     <p class='authors'>By: <span class="authors">Viet Hung Nguyen &lt;hvnsweeting&gt;</span></p>
   </header>
 
-<p>Setup and write the first &ldquo;hello world&rdquo; program, to a daily work ready &ldquo;deploy&rdquo;.</p>
+<p>Setup and write the first &ldquo;hello world&rdquo; program, to a daily work ready &ldquo;deploy&rdquo; with package management.</p>
 <!-- more-->
 
 <h2 id="installing">Installing</h2>
@@ -113,7 +113,171 @@
 
 <p>DrRacket and <code>raco</code> is really good selling point for Racket, it&rsquo;s uesr-friendly, just click and run, no error, searching, &hellip;</p>
 
-<p>A Racket 7.1 script takes minimum 36MB to run. A Python3.6 script takes minimum 8MB to run.</p>
+<p>A Racket 7.1 script takes minimum 36MB to run. A Python3.6 script takes minimum 8MB to run. Note that <code>Racket 7.1</code> is often faster than <code>Python3</code>, see <a href="">https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/racket-python3.html</a></p>
+
+<h2 id="installing-packages">Installing packages</h2>
+
+<p><code>raco</code> can install package from <strong>Planet package</strong> or from git</p>
+
+<div class="brush: sh">
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span>$ raco pkg install drracket-vim-tool
+Resolving <span class="s2">"drracket-vim-tool"</span> via https://download.racket-lang.org/releases/7.1/catalog/
+Resolving <span class="s2">"drracket-vim-tool"</span> via https://pkgs.racket-lang.org
+Downloading repository git://github.com/takikawa/drracket-vim-tool
+raco setup: version: <span class="m">7</span>.1
+raco setup: platform: x86_64-macosx <span class="o">[</span>3m<span class="o">]</span>
+raco setup: installation name: <span class="m">7</span>.1
+raco setup: variants: 3m
+raco setup: main collects: /Applications/Racket v7.1/collects
+raco setup: collects paths:
+raco setup:   /Users/viethung.nguyen/Library/Racket/7.1/collects
+raco setup:   /Applications/Racket v7.1/collects
+raco setup: main pkgs: /Applications/Racket v7.1/share/pkgs
+raco setup: pkgs paths:
+raco setup:   /Applications/Racket v7.1/share/pkgs
+raco setup:   /Users/viethung.nguyen/Library/Racket/7.1/pkgs
+raco setup: links files:
+raco setup:   /Applications/Racket v7.1/share/links.rktd
+raco setup:   /Users/viethung.nguyen/Library/Racket/7.1/links.rktd
+raco setup: main docs: /Applications/Racket v7.1/doc
+raco setup: --- updating info-domain tables ---
+raco setup: updating: /Users/viethung.nguyen/Library/Racket/7.1/share/info-cache.rktd
+raco setup: --- pre-installing collections ---
+raco setup: --- installing foreign libraries ---
+raco setup: --- installing shared files ---
+raco setup: --- compiling collections ---
+raco setup: --- parallel build using <span class="m">8</span> <span class="nb">jobs</span> ---
+raco setup: <span class="m">7</span> making: &lt;pkgs&gt;/drracket-vim-tool
+raco setup: <span class="m">7</span> making: &lt;pkgs&gt;/drracket-vim-tool/private
+raco setup: <span class="m">7</span> making: &lt;pkgs&gt;/drracket-vim-tool/tests
+raco setup: --- creating launchers ---
+raco setup: --- installing man pages ---
+raco setup: --- building documentation ---
+raco setup: --- installing collections ---
+raco setup: --- post-installing collections ---
+</pre></div>
+</td></tr></tbody></table>
+</div>
+
+<p>That package add vi-binding support in DrRacket, choose <code>Edit -&gt; Vim Mode</code> and enjoy.</p>
+
+<p>Install <code>frog</code> for a static blog generator</p>
+
+<div class="brush: sh">
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre>1
+2
+3
+4
+5</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span>$ raco pkg install frog
+Resolving <span class="s2">"frog"</span> via https://download.racket-lang.org/releases/7.1/catalog/
+Resolving <span class="s2">"frog"</span> via https://pkgs.racket-lang.org
+Downloading repository git://github.com/greghendershott/frog
+...
+</pre></div>
+</td></tr></tbody></table>
+</div>
+
+<p>Then creates new blog via</p>
+
+<div class="brush: sh">
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span>$ raco frog
+Frog <span class="m">0</span>.29
+raco frog <span class="o">[</span> &lt;option&gt; ... <span class="o">]</span>
+ where &lt;option&gt; is one of
+  --doc :
+    Browse full documentation <span class="k">for</span> Frog.
+  --init :
+    Initialize current directory as a new Frog project, creating
+    default files as a starting point.
+...
+</pre></div>
+</td></tr></tbody></table>
+</div>
+
+<p>Or from <code>git</code>:</p>
+
+<div class="brush: sh">
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre>1
+2</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span>$ raco pkg install https://github.com/stchang/redis
+...
+</pre></div>
+</td></tr></tbody></table>
+</div>
   <footer>
     <script type="text/javascript">
       !function(d,s,id){
@@ -128,11 +292,11 @@
     </script>
     <a href="https://twitter.com/share"
        class="twitter-share-button"
-       data-url="http://www.example.com/2019/01/setup-racket.html"
+       data-url="http://www.example.com/2019/01/setup-racket-and-package-management.html"
        data-dnt="true">
       "Tweet"</a>
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-    <g:plusone size="medium" href="http://www.example.com/2019/01/setup-racket.html"></g:plusone>
+    <g:plusone size="medium" href="http://www.example.com/2019/01/setup-racket-and-package-management.html"></g:plusone>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_config = function () {

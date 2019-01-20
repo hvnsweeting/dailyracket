@@ -6,15 +6,15 @@
  <id>urn:http-www-example-com:-index-html</id>
  <updated>2019-01-20T09:01:47Z</updated>
  <entry>
-  <title type="text">Setup Racket</title>
-  <link rel="alternate" href="http://www.example.com/2019/01/setup-racket.html?utm_source=all&amp;utm_medium=Atom" />
-  <id>urn:http-www-example-com:-2019-01-setup-racket-html</id>
+  <title type="text">Setup Racket and package management</title>
+  <link rel="alternate" href="http://www.example.com/2019/01/setup-racket-and-package-management.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-01-setup-racket-and-package-management-html</id>
   <published>2019-01-20T09:01:47Z</published>
   <updated>2019-01-20T09:01:47Z</updated>
   <author>
    <name>Viet Hung Nguyen &lt;hvnsweeting&gt;</name></author>
   <content type="html">
-&lt;p&gt;Setup and write the first &amp;ldquo;hello world&amp;rdquo; program, to a daily work ready &amp;ldquo;deploy&amp;rdquo;.&lt;/p&gt;&lt;a href="http://www.example.com/2019/01/setup-racket.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry>
+&lt;p&gt;Setup and write the first &amp;ldquo;hello world&amp;rdquo; program, to a daily work ready &amp;ldquo;deploy&amp;rdquo; with package management.&lt;/p&gt;&lt;a href="http://www.example.com/2019/01/setup-racket-and-package-management.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry>
  <entry>
   <title type="text">Hello Racket!</title>
   <link rel="alternate" href="http://www.example.com/2019/01/hello-racket.html?utm_source=all&amp;utm_medium=Atom" />

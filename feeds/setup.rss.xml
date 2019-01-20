@@ -8,10 +8,10 @@
   <pubDate>Sun, 20 Jan 2019 09:01:47 UT</pubDate>
   <ttl>1800</ttl>
   <item>
-   <title>Setup Racket</title>
-   <link>http://www.example.com/2019/01/setup-racket.html?utm_source=setup&amp;utm_medium=RSS</link>
-   <guid isPermaLink="false">urn:http-www-example-com:-2019-01-setup-racket-html</guid>
+   <title>Setup Racket and package management</title>
+   <link>http://www.example.com/2019/01/setup-racket-and-package-management.html?utm_source=setup&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-01-setup-racket-and-package-management-html</guid>
    <pubDate>Sun, 20 Jan 2019 09:01:47 UT</pubDate>
    <author>Viet Hung Nguyen &lt;hvnsweeting&gt;</author>
    <description>
-&lt;p&gt;Setup and write the first &amp;ldquo;hello world&amp;rdquo; program, to a daily work ready &amp;ldquo;deploy&amp;rdquo;.&lt;/p&gt;&lt;a href="http://www.example.com/2019/01/setup-racket.html?utm_source=setup&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item></channel></rss>
+&lt;p&gt;Setup and write the first &amp;ldquo;hello world&amp;rdquo; program, to a daily work ready &amp;ldquo;deploy&amp;rdquo; with package management.&lt;/p&gt;&lt;a href="http://www.example.com/2019/01/setup-racket-and-package-management.html?utm_source=setup&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item></channel></rss>
