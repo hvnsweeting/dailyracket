@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">Daily Racket: Posts tagged 'first'</title>
+ <link rel="self" href="http://www.example.com/feeds/first.atom.xml" />
+ <link href="http://www.example.com/tags/first.html" />
+ <id>urn:http-www-example-com:-tags-first-html</id>
+ <updated>2019-01-20T08:27:54Z</updated>
+ <entry>
+  <title type="text">Hello Racket!</title>
+  <link rel="alternate" href="http://www.example.com/2019/01/hello-racket.html?utm_source=first&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-01-hello-racket-html</id>
+  <published>2019-01-20T08:27:54Z</published>
+  <updated>2019-01-20T08:27:54Z</updated>
+  <author>
+   <name>Viet Hung Nguyen &lt;hvnsweeting&gt;</name></author>
+  <content type="html">
+&lt;p&gt;Hello Racket!&lt;/p&gt;
+
+&lt;p&gt;An attempt to use some Lisp (Racket) at work.&lt;/p&gt;&lt;a href="http://www.example.com/2019/01/hello-racket.html?utm_source=first&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry></feed>

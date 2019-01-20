@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0">
+ <channel>
+  <title>Daily Racket: Daily Racket</title>
+  <description>Daily Racket: Daily Racket</description>
+  <link>http://www.example.com/index.html</link>
+  <lastBuildDate>Sun, 20 Jan 2019 08:27:54 UT</lastBuildDate>
+  <pubDate>Sun, 20 Jan 2019 08:27:54 UT</pubDate>
+  <ttl>1800</ttl>
+  <item>
+   <title>Hello Racket!</title>
+   <link>http://www.example.com/2019/01/hello-racket.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-01-hello-racket-html</guid>
+   <pubDate>Sun, 20 Jan 2019 08:27:54 UT</pubDate>
+   <author>Viet Hung Nguyen &lt;hvnsweeting&gt;</author>
+   <description>
+&lt;p&gt;Hello Racket!&lt;/p&gt;
+
+&lt;p&gt;An attempt to use some Lisp (Racket) at work.&lt;/p&gt;&lt;a href="http://www.example.com/2019/01/hello-racket.html?utm_source=all&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item></channel></rss>
