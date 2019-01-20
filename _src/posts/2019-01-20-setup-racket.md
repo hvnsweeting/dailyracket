@@ -25,7 +25,8 @@ in Racket), and ton of useful libraries. Just to name some essential packages:
 `#!/usr/bin/env racket` or using interactively.
 - DrRacket - a GUI IDE would be the daily tool for developing. It's not a fancy
 IDE with all mega features but simple and nice. Support auto completing via
-`COMMAND /` (MacOS) or `Ctrl /` if you on Windows/Linux. It supports multiple
+`Command /` (MacOS) or `Ctrl /` if you on Windows/Linux, `Command I` or `Ctrl
+I` to reformat code. It supports multiple
 tabs. DrRacket have default 2 panel, top one called `Definitions` where you put
 code. Bottom one runs `racket` interpreter. A run button click to run the
 code (Command R/Ctrl R). It may use ~ 1GB RAM, not tiny, but maybe less than
@@ -33,8 +34,8 @@ your browser.
 - `raco` command is everything manager for Racket. Run command `raco doc` to
 open local document. `raco pkg install packagename` to install a package.
 
-DrRacket and `raco` is really good selling point for Racket, it's uesr-friendly,
-just click and run, no error, searching, ...
+DrRacket and `raco` are really good selling points for Racket, they are
+uesr-friendly, just click and run, no error, internet searching, ...
 
 A Racket 7.1 script takes minimum 36MB to run. A Python3.6 script takes minimum
 8MB to run. Note that `Racket 7.1` is often faster than `Python3`, see
@@ -115,4 +116,3 @@ Or from `git`:
 ```sh
 $ raco pkg install https://github.com/stchang/redis
 ...
-```
