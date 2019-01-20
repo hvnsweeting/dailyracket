@@ -1,2 +1,3 @@
 http://www.example.com/2019/01/hello-racket.html
+http://www.example.com/2019/01/setup-racket.html
 http://www.example.com/About.html

@@ -3,14 +3,14 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Posts tagged 'Racket'</title>
-    <meta name="description" content="Posts tagged 'Racket'">
+    <title>Setup Racket</title>
+    <meta name="description" content="Setup and write the first &quot;hello world&quot; program, to a daily work ready &quot;deploy&quot;....">
     <meta name="author"      content="Viet Hung Nguyen <hvnsweeting>">
-    <meta name="keywords"    content="Racket">
+    <meta name="keywords"    content="Racket, setup">
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <link rel="icon"      href="/favicon.ico">
-    <link rel="canonical" href="http://www.example.com/tags/Racket.html">
-
+    <link rel="canonical" href="http://www.example.com/2019/01/setup-racket.html">
+    <link rel="next" href="/2019/01/hello-racket.html">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
@@ -19,9 +19,9 @@
     <link rel="stylesheet" type="text/css" href="/css/custom.css">
     <!-- Feeds -->
     <link rel="alternate" type="application/atom+xml"
-          href="/feeds/Racket.atom.xml" title="Atom Feed">
+          href="/feeds/all.atom.xml" title="Atom Feed">
     <link rel="alternate" type="application/rss+xml"
-          href="/feeds/Racket.rss.xml" title="RSS Feed">
+          href="/feeds/all.rss.xml" title="RSS Feed">
     <!-- JS -->
     <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -66,11 +66,11 @@
             </li> 
 
             <li class="nav-item">
-              <a class="nav-link" href="/feeds/Racket.atom.xml">Atom</a>
+              <a class="nav-link" href="/feeds/all.atom.xml">Atom</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/feeds/Racket.rss.xml">RSS</a>
+              <a class="nav-link" href="/feeds/all.rss.xml">RSS</a>
             </li>
           </ul>
       </div>
@@ -87,34 +87,82 @@
 
 
 
-          <h1>Posts tagged <em>Racket</em></h1>
+
 
           <article>
   <header>
-    <h2><a href='/2019/01/setup-racket.html'>Setup Racket</a></h2>
+    <h1>Setup Racket</h1>
     <p class='date-and-tags'>
 <time datetime="2019-01-20" pubdate="true">2019-01-20</time> :: <span class="tags"><a href="/tags/Racket.html">Racket</a>, <a href="/tags/setup.html">setup</a></span></p>
     <p class='authors'>By: <span class="authors">Viet Hung Nguyen &lt;hvnsweeting&gt;</span></p>
   </header>
 
 <p>Setup and write the first &ldquo;hello world&rdquo; program, to a daily work ready &ldquo;deploy&rdquo;.</p>
-  <footer>
-    <a href='/2019/01/setup-racket.html'>&hellip; more &hellip;</a>
-  </footer>
-</article>
-<article>
-  <header>
-    <h2><a href='/2019/01/hello-racket.html'>Hello Racket!</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2019-01-20" pubdate="true">2019-01-20</time> :: <span class="tags"><a href="/tags/Racket.html">Racket</a>, <a href="/tags/first.html">first</a></span></p>
-    <p class='authors'>By: <span class="authors">Viet Hung Nguyen &lt;hvnsweeting&gt;</span></p>
-  </header>
+<!-- more-->
 
-<p>Hello Racket!</p>
+<h2 id="installing">Installing</h2>
 
-<p>An attempt to use some Lisp (Racket) at work.</p>
+<p>Install Racket by download binary from Racket <a href="https://racket-lang.org/">https://racket-lang.org/</a>. The current version is 7.1 (October 2018), the binary is 109MB, it is a bit heavy but included also document, an IDE called DrRacket (which of course written in Racket), and ton of useful libraries. Just to name some essential packages: - json <code>(require json)</code> - http client <code>(require net/http-client)</code> - command argument parser <code>(TODO)</code> - string formatting, file I/O - all functions to work with file/directories - a HTTP server - a GUI framework if you ever need.</p>
+
+<h2 id="running">Running</h2>
+
+<ul>
+ <li><code>racket</code> command is an interpreter, can be put on top of a script <code>#!/usr/bin/env racket</code> or using interactively.</li>
+ <li>DrRacket - a GUI IDE would be the daily tool for developing. It&rsquo;s not a fancy IDE with all mega features but simple and nice. Support auto completing via <code>COMMAND /</code> (MacOS) or <code>Ctrl /</code> if you on Windows/Linux. It supports multiple tabs. DrRacket have default 2 panel, top one called <code>Definitions</code> where you put code. Bottom one runs <code>racket</code> interpreter. A run button click to run the code (Command R/Ctrl R). It may use ~ 1GB RAM, not tiny, but maybe less than your browser.</li>
+ <li><code>raco</code> command is everything manager for Racket. Run command <code>raco doc</code> to open local document. <code>raco pkg install packagename</code> to install a package.</li></ul>
+
+<p>DrRacket and <code>raco</code> is really good selling point for Racket, it&rsquo;s uesr-friendly, just click and run, no error, searching, &hellip;</p>
+
+<p>A Racket 7.1 script takes minimum 36MB to run. A Python3.6 script takes minimum 8MB to run.</p>
   <footer>
-    <a href='/2019/01/hello-racket.html'>&hellip; more &hellip;</a>
+    <script type="text/javascript">
+      !function(d,s,id){
+          var js,fjs=d.getElementsByTagName(s)[0];
+          if(!d.getElementById(id)){
+              js=d.createElement(s);
+              js.id=id;
+              js.src="//platform.twitter.com/widgets.js";
+              fjs.parentNode.insertBefore(js,fjs);
+          }
+      }(document,"script","twitter-wjs");
+    </script>
+    <a href="https://twitter.com/share"
+       class="twitter-share-button"
+       data-url="http://www.example.com/2019/01/setup-racket.html"
+       data-dnt="true">
+      "Tweet"</a>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <g:plusone size="medium" href="http://www.example.com/2019/01/setup-racket.html"></g:plusone>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.identifier = undefined;
+        this.page.url = undefined;
+        this.page.title = undefined;
+        this.page.category_id = undefined;
+      };
+      var disqus_shortname = 'shortname';
+      (function() {
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.head || document.body).appendChild(dsq);
+      })();
+    </script>
+    <div class="row justify-content-center">
+      <nav aria-label="Page Navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="/2019/01/hello-racket.html"
+               aria-label="Previous">
+              <span aria-hidden="true">&larr; Hello Racket!</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
   </footer>
 </article>
         </div>
