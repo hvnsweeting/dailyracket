@@ -39,7 +39,7 @@ uesr-friendly, just click and run, no error, internet searching, ...
 
 A Racket 7.1 script takes minimum 36MB to run. A Python3.6 script takes minimum
 8MB to run. Note that `Racket 7.1` is often faster than `Python3`, see
-[https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/racket-python3.html]()
+<https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/racket-python3.html>
 
 ## Installing packages
 
@@ -116,3 +116,7 @@ Or from `git`:
 ```sh
 $ raco pkg install https://github.com/stchang/redis
 ...
+```
+
+<https://github.com/avelino/awesome-racket> is a good list if you are going
+to looking for useful packages.
