@@ -11,6 +11,7 @@ Install Racket by download binary from Racket [https://racket-lang.org/](https:/
 The current version is 7.1 (October 2018), the binary is 109MB, it is a bit
 heavy but included also document, an IDE called DrRacket (which of course written
 in Racket), and ton of useful libraries. Just to name some essential packages:
+
 - json  `(require json)`
 - http client `(require net/http-client)`
 - command argument parser `(TODO)`
